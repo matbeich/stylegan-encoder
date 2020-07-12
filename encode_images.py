@@ -121,7 +121,7 @@ def main():
 
     perc_model = None
     if (args.use_lpips_loss > 0.00000001):
-        with dnnlib.util.open_url('https://drive.google.com/uc?id=1N2-m9qszOeVC9Tq77WxsLnuWwOedQiD2', cache_dir=config.cache_dir) as f:
+        with dnnlib.util.open_url('https://drive.google.com/u/0/uc?export=download&confirm=HUQu&id=1q7Olq7Vfh2b61xL_zC4Z7HBCYXshcTAz', cache_dir=config.cache_dir) as f:
             perc_model =  pickle.load(f)
     perceptual_model = PerceptualModel(args, perc_model=perc_model, batch_size=args.batch_size)
     perceptual_model.build_perceptual_model(generator, discriminator_network)
